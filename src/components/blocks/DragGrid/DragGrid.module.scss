@@ -1,0 +1,17 @@
+.GridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.Column {
+    background-color: #f0f0f0;
+    padding: 10px;
+    user-select: none;
+    cursor: col-resize;
+    position: relative;
+
+    &:hover {
+        background-color: #e0e0e0;
+    }
+}

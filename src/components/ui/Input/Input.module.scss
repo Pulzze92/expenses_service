@@ -1,0 +1,5 @@
+@import "../../../assets/styles/_imports";
+
+$selector: ".Input";
+
+@include forMixin($selector);

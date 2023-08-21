@@ -1,0 +1,11 @@
+// Define mixin for button shape
+@mixin buttonShape($shape) {
+    @if $shape == square {
+        border-radius: 0;
+    } @else if $shape == rounded {
+        border-radius: 100px;
+    }
+    // Add more shapes here
+}
+
+$shapes: (square, rounded);

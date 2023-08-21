@@ -1,0 +1,36 @@
+@mixin buttonSize($size) {
+    @if $size == small {
+        font-size: 14px;
+        padding: 6px 16px;
+    } @else if $size == medium {
+        font-size: 16px;
+        padding: 10px 24px;
+    } @else if $size == large {
+        font-size: 18px;
+        padding: 14px 32px;
+    } @else if $size == fit {
+        font-size: 16px;
+        padding: 0px;
+    }
+    // Add more sizes here
+}
+
+
+@mixin IconButtonSize($size) {
+    @if $size == small {
+        font-size: 14px;
+        padding: 6px 6px;
+    } @else if $size == medium {
+        font-size: 16px;
+        padding: 10px 10px;
+    } @else if $size == large {
+        font-size: 18px;
+        padding: 14px 14px;
+    } @else if $size == fit {
+        font-size: 16px;
+        padding: 0px;
+    }
+    // Add more sizes here
+}
+
+$sizes: (small, medium, large, fit);

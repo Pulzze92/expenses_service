@@ -1,0 +1,150 @@
+@mixin flexBox($place) {
+    @if $place == row_st {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    } @else if $place == row_ct {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    } @else if $place == row_et {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+    } @else if $place == row_sbt {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    } @else if $place == row_sc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    } @else if $place == row_cc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    } @else if $place == row_ec {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    } @else if $place == row_sbc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    } @else if $place == row_sb {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+    } @else if $place == row_cb {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+    } @else if $place == row_eb {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    } @else if $place == row_sbb {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    } @else if $place == col_st {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    } @else if $place == col_ct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    } @else if $place == col_et {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    } @else if $place == col_sbt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    } @else if $place == col_sc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    } @else if $place == col_cc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } @else if $place == col_ec {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    } @else if $place == col_sbc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    } @else if $place == col_sb {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    } @else if $place == col_cb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    } @else if $place == col_eb {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    } @else if $place == col_sbb {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+$places: (
+    row_st,
+    row_ct,
+    row_et,
+    row_sbt,
+    row_sc,
+    row_cc,
+    row_ec,
+    row_sbc,
+    row_sb,
+    row_cb,
+    row_eb,
+    row_sbb,
+    col_st,
+    col_ct,
+    col_et,
+    col_sbt,
+    col_sc,
+    col_cc,
+    col_ec,
+    col_sbc,
+    col_sb,
+    col_cb,
+    col_eb,
+    col_sbb
+);

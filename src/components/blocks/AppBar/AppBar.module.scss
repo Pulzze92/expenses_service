@@ -1,0 +1,36 @@
+@import "../../../assets/styles/themes/colors";
+
+.AppBar {
+    padding: 3px 0px;
+    display: grid;
+    background-color: color(background, primary);
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo  menu";
+    .logo {
+        grid-area: logo;
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+    }
+
+    .menu {
+        padding-right: 10px;
+        grid-area: menu;
+        display: grid;
+        gap: 10px;
+        grid-auto-flow: column;
+        justify-content: end;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 15%;
+        grid-template-areas: "menu logo";
+
+        .menu {
+            padding-right: 0px;
+            padding-left: 10px;
+            justify-content: start;
+        }
+    }
+}

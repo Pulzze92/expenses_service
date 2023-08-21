@@ -1,0 +1,48 @@
+@import "../themes/colors";
+
+@mixin buttonColor($color) {
+    background-color: color_element($color, background_dark);
+    color: color_element($color, main);
+    cursor: pointer;
+    &:hover {
+        background-color: color_element($color, dark);
+        outline: color_element($color, dark);
+        &::placeholder {
+            color: color_element($color, light);
+        }
+    }
+    &:active {
+        background-color: color_element($color, light);
+        outline: 3px solid color_element($color, main);
+        &::placeholder {
+            color: color_element($color, light);
+        }
+    }
+    &:focus {
+        outline: 3px solid color_element($color, main);
+        &:hover {
+            background-color: color_element($color, light);
+        }
+        &:active {
+            background-color: color_element($color, dark);
+            &::placeholder {
+                color: color_element($color, dark);
+            }
+        }
+    }
+}
+
+@mixin textColor($color) {
+    color: color_element($color, main);
+    cursor: pointer;
+}
+
+@mixin displayLaybel($display) {
+    @if $display == none {
+        display: none;
+    } @else if $display == true {
+        display: block;
+    }
+}
+
+$displays: (none, true);

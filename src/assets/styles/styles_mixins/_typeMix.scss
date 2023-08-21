@@ -1,0 +1,10 @@
+@mixin buttonType($color, $type) {
+    @if $type == outline {
+        outline: 3px solid color_element($color, main);
+        // outline: 3px solid red;
+    } @else if $type == text {
+        border: none;
+    }
+}
+
+$types: (outline, text);

@@ -1,0 +1,9 @@
+@import "../../../assets/styles/imports";
+
+$selector: ".Label";
+
+@include TextColorMixin($selector);
+
+.Label {
+    padding: 10px;
+}

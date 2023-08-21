@@ -1,0 +1,11 @@
+@import "../../../assets/styles/_imports";
+
+// todo: add class fore base Section
+@each $place in $places {
+    .Section_#{$place} {
+        background-color: color(background, primary);
+        color: color(text, primary);
+        display: flex;
+        @include flexBox($place);
+    }
+}

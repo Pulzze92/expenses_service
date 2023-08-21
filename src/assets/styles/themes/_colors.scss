@@ -1,0 +1,86 @@
+// Define the Sass Map (dictionary) with nested levels
+$colors: (
+    background: (
+        primary: #141218,
+        secondary: #211f26,
+    ),
+    text: (
+        primary: #cfcce5,
+        secondary: #9b91ab,
+        disabled: #2c2432,
+        hint: #211d33,
+    ),
+    divider: (
+        light: #9b91ab,
+        dark: #292436
+    ),
+);
+
+$color_elements: (
+    primary: (
+        main: #00d1ba,
+        light: #aeebe1,
+        dark: #057f68,
+        contrastText: #17141e,
+        background_dark: #211f26,
+        background_light: #9b91ab,
+    ),
+    secondary: (
+        main: #8a2be2,
+        light: #9c52e8,
+        dark: #380677,
+        contrastText: #cfcce5,
+        background_dark: #211f26,
+        background_light: #9b91ab,
+    ),
+    error: (
+        main: #ff006d,
+        light: #e6b0c7,
+        dark: #7a0b3f,
+        contrastText: #cfcce5,
+        background_dark: #211f26,
+        background_light: #9b91ab,
+    ),
+    warning: (
+        main: #fe7e39,
+        light: #ffb28e,
+        dark: #8f3b04,
+        contrastText: #17141e,
+        background_dark: #211f26,
+        background_light: #9b91ab,
+    ),
+    success: (
+        main: #95ec6f,
+        light: #c4f5af,
+        dark: #367527,
+        contrastText: #17141e,
+        background_dark: #211f26,
+        background_light: #9b91ab,
+    ),
+    info: (
+        main: #00b9d1,
+        light: #7fdce9,
+        dark: #0094a4,
+        contrastText: #17141e,
+        background_dark: #211f26,
+        background_light: #9b91ab,
+    ),
+    grey: (
+        main: #05bcd4,
+        light: #7fdce9,
+        dark: #0094a4,
+        contrastText: #17141e,
+        background_dark: #211f26,
+        background_light: #9b91ab,
+    ),
+);
+
+// Custom function to access values from the nested dictionary
+@function color($section, $key) {
+    @return map-get(map-get($colors, $section), $key);
+}
+
+@function color_element($section, $key) {
+    @return map-get(map-get($color_elements, $section), $key);
+}
+

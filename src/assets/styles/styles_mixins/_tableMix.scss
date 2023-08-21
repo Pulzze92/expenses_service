@@ -1,0 +1,26 @@
+@mixin cellMixin($text_align) {
+    @if $text_align == start {
+        text-align: start;
+    } @else if $text_align == center {
+        text-align: center;
+    } @else if $text_align == end {
+        text-align: end;
+    }
+}
+
+$text_aligns: (start, center, end);
+
+@mixin tableMixin($selector) {
+    @each $color, $colorValue in $color_elements {
+        @each $type in $types {
+            @each $text_align in $text_aligns {
+                #{"#{$selector}_#{$color}_#{$type}_#{$text_align}"} {
+                    @include buttonColor($color);
+                    @include buttonType($color, $type);
+                    @include cellMixin($text_align);
+                    padding: 2px 10px;
+                }
+            }
+        }
+    }
+}

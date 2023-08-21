@@ -1,0 +1,350 @@
+{
+  "spheres": [
+    {
+      "id": 0,
+      "name": "undefined"
+    },
+    {
+      "id": 1,
+      "name": "house"
+    },
+    {
+      "id": 2,
+      "name": "food"
+    },
+    {
+      "id": 3,
+      "name": "transport"
+    },
+    {
+      "id": 4,
+      "name": "education"
+    },
+    {
+      "id": 5,
+      "name": "traveling"
+    },
+    {
+      "id": 6,
+      "name": "entertainment"
+    },
+    {
+      "id": 7,
+      "name": "work"
+    },
+    {
+      "id": 8,
+      "name": "business"
+    },
+    {
+      "id": 9,
+      "name": "helth"
+    },
+    {
+      "id": 10,
+      "name": "personal staff"
+    },
+    {
+      "id": 11,
+      "name": "extrapayment"
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "undefined"
+    },
+    {
+      "id": 1,
+      "name": "water"
+    },
+    {
+      "id": 2,
+      "name": "sewer"
+    },
+    {
+      "id": 3,
+      "name": "electricity"
+    },
+    {
+      "id": 4,
+      "name": "home maintenance"
+    },
+    {
+      "id": 5,
+      "name": "rent"
+    },
+    {
+      "id": 6,
+      "name": "heating"
+    },
+    {
+      "id": 7,
+      "name": "gas"
+    },
+    {
+      "id": 8,
+      "name": "internet"
+    },
+    {
+      "id": 9,
+      "name": "communication"
+    },
+    {
+      "id": 10,
+      "name": "furniture"
+    },
+    {
+      "id": 11,
+      "name": "appliances"
+    },
+    {
+      "id": 12,
+      "name": "office equipment"
+    },
+    {
+      "id": 13,
+      "name": "repairs"
+    },
+    {
+      "id": 14,
+      "name": "household items"
+    },
+    {
+      "id": 15,
+      "name": "subscriptions"
+    },
+    {
+      "id": 16,
+      "name": "company 1"
+    },
+    {
+      "id": 17,
+      "name": "company 2"
+    },
+    {
+      "id": 18,
+      "name": "business 1"
+    },
+    {
+      "id": 19,
+      "name": "business 2"
+    },
+    {
+      "id": 20,
+      "name": "workplace food"
+    },
+    {
+      "id": 21,
+      "name": "dining out"
+    },
+    {
+      "id": 22,
+      "name": "home-cooked meals"
+    },
+    {
+      "id": 23,
+      "name": "public transportation"
+    },
+    {
+      "id": 24,
+      "name": "car"
+    },
+    {
+      "id": 25,
+      "name": "other"
+    },
+    {
+      "id": 26,
+      "name": "courses"
+    },
+    {
+      "id": 27,
+      "name": "additional education"
+    },
+    {
+      "id": 28,
+      "name": "universities"
+    },
+    {
+      "id": 29,
+      "name": "books"
+    },
+    {
+      "id": 30,
+      "name": "concerts"
+    },
+    {
+      "id": 31,
+      "name": "activities"
+    },
+    {
+      "id": 32,
+      "name": "sports"
+    },
+    {
+      "id": 33,
+      "name": "clothing"
+    },
+    {
+      "id": 34,
+      "name": "cosmetics"
+    },
+    {
+      "id": 35,
+      "name": "medications"
+    },
+    {
+      "id": 36,
+      "name": "doctors"
+    },
+    {
+      "id": 37,
+      "name": "consultants"
+    }
+  ],
+  "actionTypes": [
+    {
+      "id": 0,
+      "name": "undefined"
+    },
+    {
+      "id": 1,
+      "name": "income"
+    },
+    {
+      "id": 2,
+      "name": "expense"
+    }
+  ],
+  "actions": [
+    {
+      "order_num": 1,
+      "well_num": 2000,
+      "profile": "В",
+      "date": "27.08.2022",
+      "D_col": 114,
+      "operation_object": "ТП10",
+      "hard": 100,
+      "partial": 0,
+      "absent": 0,
+      "homogeneous": 100,
+      "unilateral": 0,
+      "contact_quality_factor": 1.00,
+      "filling_quality_factor": 1.00,
+      "cementing_quality": 1.00
+    },
+    {
+      "order_num": 2,
+      "well_num": 400,
+      "profile": "В",
+      "date": "03.01.2022",
+      "D_col": 114,
+      "operation_object": "ТП10",
+      "hard": 93,
+      "partial": 7,
+      "absent": 0,
+      "homogeneous": 96,
+      "unilateral": 4,
+      "contact_quality_factor": 0.98,
+      "filling_quality_factor": 0.96,
+      "cementing_quality": 0.94
+    },
+    {
+      "order_num": 3,
+      "well_num": 1600,
+      "profile": "В",
+      "date": "20.01.2022",
+      "D_col": 114,
+      "operation_object": "ТП10",
+      "hard": 0,
+      "partial": 98,
+      "absent": 2,
+      "homogeneous": 100,
+      "unilateral": 0,
+      "contact_quality_factor": 0.69,
+      "filling_quality_factor": 1.00,
+      "cementing_quality": 0.69
+    },
+    {
+      "order_num": 4,
+      "well_num": 900,
+      "profile": "В",
+      "date": "31.05.2022",
+      "D_col": 114,
+      "operation_object": "ТП10",
+      "hard": 33,
+      "partial": 67,
+      "absent": 0,
+      "homogeneous": 78,
+      "unilateral": 22,
+      "contact_quality_factor": 0.80,
+      "filling_quality_factor": 0.78,
+      "cementing_quality": 0.63
+    },
+    {
+      "order_num": 5,
+      "well_num": 4061,
+      "profile": "Г",
+      "date": "23.12.2022",
+      "D_col": 168,
+      "operation_object": "ТП10",
+      "hard": 20,
+      "partial": 75,
+      "absent": 6,
+      "homogeneous": 37,
+      "unilateral": 63,
+      "contact_quality_factor": 0.72,
+      "filling_quality_factor": 0.37,
+      "cementing_quality": 0.26
+    },
+    {
+      "order_num": 6,
+      "well_num": 2194,
+      "profile": "Г",
+      "date": "03.09.2022",
+      "D_col": 114,
+      "operation_object": "ТП10",
+      "hard": 13,
+      "partial": 87,
+      "absent": 0,
+      "homogeneous": 25,
+      "unilateral": 75,
+      "contact_quality_factor": 0.74,
+      "filling_quality_factor": 0.25,
+      "cementing_quality": 0.19
+    },
+    {
+      "order_num": 7,
+      "well_num": 4161,
+      "profile": "Г",
+      "date": "03.05.2022",
+      "D_col": 114,
+      "operation_object": "ТП10",
+      "hard": 0,
+      "partial": 37,
+      "absent": 63,
+      "homogeneous": 39,
+      "unilateral": 61,
+      "contact_quality_factor": 0.26,
+      "filling_quality_factor": 0.39,
+      "cementing_quality": 0.10
+    },
+    {
+      "order_num": 8,
+      "well_num": 4041,
+      "profile": "Г",
+      "date": "08.03.2022",
+      "D_col": 114,
+      "operation_object": "ТП10",
+      "hard": 0,
+      "partial": 25,
+      "absent": 75,
+      "homogeneous": 34,
+      "unilateral": 66,
+      "contact_quality_factor": 0.18,
+      "filling_quality_factor": 0.34,
+      "cementing_quality": 0.06
+    }
+  ]
+}

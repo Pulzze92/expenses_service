@@ -1,0 +1,44 @@
+@mixin forMixin($selector) {
+    @each $color, $colorValue in $color_elements {
+        @each $type in $types {
+            @each $shape in $shapes {
+                @each $size in $sizes {
+                    #{"#{$selector}_#{$color}_#{$type}_#{$shape}_#{$size}"} {
+                        @include buttonShape($shape);
+                        @include buttonType($color, $type);
+                        @include buttonColor($color);
+                        @include buttonSize($size);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin IconButtonMixin($selector) {
+    @each $color, $colorValue in $color_elements {
+        @each $type in $types {
+            @each $shape in $shapes {
+                @each $size in $sizes {
+                    #{"#{$selector}_#{$color}_#{$type}_#{$shape}_#{$size}"} {
+                        @include buttonShape($shape);
+                        @include buttonType($color, $type);
+                        @include buttonColor($color);
+                        @include IconButtonSize($size);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin TextColorMixin($selector) {
+    @each $color, $colorValue in $color_elements {
+        @each $display in $displays {
+            #{"#{$selector}_#{$color}_#{$display}"} {
+                @include textColor($color);
+                @include displayLaybel($display);
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@import "../../../assets/styles/imports";
+
+@each $place in $places {
+    .Box_#{$place} {
+        background-color: inherit;
+        @include flexBox($place);
+    }
+}
